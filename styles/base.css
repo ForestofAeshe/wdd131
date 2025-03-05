@@ -1,0 +1,16 @@
+body{
+    font-family: "Funnel Sans", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    border: 1px solid #000000;
+}
+
+nav{
+    
+}
