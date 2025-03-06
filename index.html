@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,16 +23,30 @@
         </nav>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-        </section>
+        <div>    
+            <section class="card" >
+                <h2>About Me</h2>
+                <div class="me">
+                    <p>I enjoy reading, multiplayer video games of various genres, and various TTRPG systems such as Dungeons and Dragons and Genesys. I was born and raised in northern Utah and served a mission in Taiwan Taichung mission.</p>
+                    <img src="images/myself-profile.jpg" alt="myself-profile">
+                </div>
+
+                <div class="state">
+                    <h2>Utah, United States of America</h2>
+                    <p>Utah is the home to Lagoon, Arches National Park and the Great Salt Lake. It is also the home to the headquarters of The Church of Jesus Christ of Latter-Day Saints</p>
+                    <img src="images\utah-state-flag.png" alt="utah-state-flag">
+                    <figcaption>Utah State Flag</figcaption>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum repellat ex voluptate excepturi iste animi aut aliquid eaque facilis repudiandae molestiae sapiente, praesentium neque minus voluptas assumenda optio! Dolor, accusantium?</p>
+            </section>
+        </div>
     </main>
 </body>
 <footer>
-    <p><span id="currentyear"></span> | Michael Petersen | USA</p>
-    <p id="lastModified"></p>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> | Michael Petersen | USA</p>
+    <p> Last Modified: <script>document.write(document.lastModified)</script></p>
 </footer>
 </html>
