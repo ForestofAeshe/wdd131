@@ -76,14 +76,12 @@ div h2{
 
 div .state h2{
     grid-row: 0/1;
-    border-bottom: solid black;
     margin-left: 2em;
 }
 
 div .state p{
     grid-column: 2/3;
     grid-row: 2/3;
-
 
 }
 
