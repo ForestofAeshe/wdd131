@@ -17,6 +17,7 @@ while (i < studentReport.length) {
     if (studentReport[i] < LIMIT) {
         console.log(studentReport[i]);
     }
+    i++;
 }
 
 // Repeat the previous programming snippet by using a forEach loop.
