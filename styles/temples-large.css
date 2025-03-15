@@ -1,0 +1,81 @@
+@media screen and (min-width: 813px) {
+    
+:root{
+    --background-color: hsl(251, 85%, 13%);
+    --default-color: hsl(29, 83%, 50%);
+}
+
+*{
+    font-family: "Funnel Sans", sans-serif;
+    background-color: var(--background-color);
+   
+}
+
+header{
+    background-color: var(--background-color);
+    color: var(--default-color);
+}
+
+header h1{
+    justify-self: center;
+    border-bottom: solid black;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul li:hover{
+    padding: 3px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 5px;   
+    justify-content: center;
+    background-color: var(--default-color);
+}
+
+main h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--default-color);
+}
+
+
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:25%;
+    justify-content: space-between;
+    border: solid .5px hsla(247, 74%, 12%, 0.694);
+    background-color: var(--default-color);
+}
+
+main image{
+    max-height: 12rem;
+    width: auto;
+    background-color: var(--default-color);
+}
+
+main figcaption{
+    background-color: var(--default-color);
+}
+
+footer{
+    justify-items: center;
+    background-color: hsl(250, 76%, 13%);
+    color: var(--default-color);
+}
+}

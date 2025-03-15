@@ -1,0 +1,46 @@
+@media screen and (max-width: 813px){
+
+    :root{
+        --background-color: hsl(251, 85%, 13%);
+        --default-color: hsl(29, 83%, 50%);
+    }
+
+    body{
+        justify-items: center;
+        background-color: var(--background-color);
+    }
+
+    ul li:hover{
+        margin: 5px 2px;
+        padding: 3px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    main div{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header{
+        background-color: var(--background-color);
+        color: var(--default-color);
+        padding: 2% 40%;
+    }
+
+    main{
+        background-color: var(--default-color);
+        color: var(--default-color);
+        padding: 0% 30%;
+    }
+
+    footer{
+        background-color: var(--background-color);
+        color: var(--default-color);
+        padding: 1% 20%;
+    }
+}
+
