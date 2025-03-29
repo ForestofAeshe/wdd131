@@ -1,0 +1,57 @@
+@media screen and (max-width: 813px){
+
+    :root{
+        --background-color: hsl(251, 85%, 13%);
+        --default-color: hsl(29, 83%, 50%);
+        --card-color:rgb(48, 48, 116);
+    }
+
+    body{
+        justify-items: center;
+        background-color: var(--background-color);
+    }
+
+    ul li:hover{
+        margin: 5px 2px;
+        padding: 3px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    header{
+        background-color: var(--background-color);
+        color: var(--default-color);
+        padding: 2% 40%;
+    }
+
+    main{
+        background-color: var(--default-color);
+        color: var(--default-color);
+        padding: 0% 30%;
+    }
+
+    .temple-card{
+        display: flex;
+        flex-direction: column;
+        border: solid rgb(48, 48, 116);
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: var(--card-color);
+        color: var(--background-color);
+    }
+    
+    .temple-card p, .temple-card img, .temple-card h1 {
+        background-color: var(--card-color);
+        color: var(--default-color);
+    }
+
+    footer{
+        background-color: var(--background-color);
+        color: var(--default-color);
+        padding: 1% 20%;
+    }
+}
+

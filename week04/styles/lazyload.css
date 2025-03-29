@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    font-family: "Funnel Sans", sans-serif;
+    background-color: rgb(4, 4, 42);
+    color: #000;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+main img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+footer {
+    justify-self: center;
+}
+
+.fade.loaded {
+    opacity: 1;
+} 
+
+.fade {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+
+/* .fade {
+    animation: fadeIn 5s;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity: 1;}
+    
+} */

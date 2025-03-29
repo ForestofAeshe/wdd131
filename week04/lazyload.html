@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Michael Petersen</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- <script src="scripts/getdates.js" defer></script> -->
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+        <div class="fade">
+            <img src="images/taibei-101-small.jpg" alt="placeholder" loading="lazy" width="400" height="auto">
+            <img src="images/taibei-101-small.jpg" alt="placeholder" loading="lazy" width="400" height="auto">
+            <img src="images/taibei-101-small.jpg" alt="placeholder" loading="lazy" width="400" height="auto">
+            <img src="images/taibei-101-small.jpg" alt="placeholder" loading="lazy" width="400" height="auto">
+            <img src="images/taibei-101-small.jpg" alt="placeholder" loading="lazy" width="400" height="auto">
+            <img src="images/taibei-101-small.jpg" alt="placeholder" loading="lazy" width="400" height="auto">
+        </div>
+
+        <script>
+            const fadeDiv = document.querySelectorAll(".fade")
+            fadeDiv.forEach(div => {
+                const img = div.querySelector("img")
+
+                function loaded() {
+                    //show img
+                    div.classList.add("loaded")
+                }
+                if (img.complete) {
+                    loaded()
+                } else {img.addEventListener("load",loaded)
+
+                }
+            })
+        </script>
+    </main>
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> | Michael Petersen | USA</p>
+        <p> Last Modified: <script>document.write(document.lastModified)</script></p>
+    </footer>
+</body>
+</html>
