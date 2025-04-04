@@ -1,6 +1,42 @@
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+  
 :root {
     --default-color: rgb(133, 202, 255);
-    --accent-color: rgb(255, 208, 88);
+    --accent-color-1: rgb(255, 208, 88);
     --text-color-1: rgb(6, 3, 36);
-    --text-color-2: rgb(112, 81, 2);
+    --accent-color-2: rgb(112, 81, 2);
 }
+
+*{
+    background-color: var(--default-color);
+    color: var(--text-color-1);
+    border: solid .5px var(--accent-color-2);
+    padding: 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background-color: var(--accent-color-2);
+}
+
+h1, h2, p {
+    background-color: var(--accent-color-1);
+}
+
+
+
