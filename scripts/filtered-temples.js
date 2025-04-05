@@ -92,3 +92,17 @@ const temples = [
 // {
 //     titleTemple(temples[i]);
 // }
+let templelist = "";
+for (let i = 0; i < temples.length; i++) 
+{
+templelist += `<tr>
+    <td>temples[i].templName</td>
+    <td>temples[i].location</td>
+    <td>temples[i].dedicated</td>
+    <td>temples[i].area</td>
+    <td><img src="temples[i].imgUrl"></img></td>
+  </tr>`;
+  
+}
+
+document.selectElementById("#temple-card").innerHTML = templelist;
