@@ -38,5 +38,15 @@ h1, h2, p {
     background-color: var(--accent-color-1);
 }
 
+div img {
+    max-width: 80%;
+    margin:  2.5% 10% 2.5% 10%;
+    background-color: var(--text-color-1);
+}
+
+footer {
+    justify-items: center;
+}
+
 
 
