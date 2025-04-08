@@ -93,16 +93,43 @@ const temples = [
 //     titleTemple(temples[i]);
 // }
 let templelist = "";
-for (let i = 0; i < temples.length; i++) 
-{
-templelist += `<tr>
-    <td>temples[i].templName</td>
-    <td>temples[i].location</td>
-    <td>temples[i].dedicated</td>
-    <td>temples[i].area</td>
-    <td><img src="temples[i].imgUrl"></img></td>
-  </tr>`;
-  
-}
 
-document.selectElementById("#temple-card").innerHTML = templelist;
+document.getElementById("home").addEventListener("click",myFunction);
+document.getElementById("old").addEventListener("click",myFunction);
+document.getElementById("new").addEventListener("click", myFunction);
+document.getElementById("large").addEventListener("click", myFunction);
+document.getElementById("small").addEventListener("click", myFunction);
+
+function myFunction() {
+
+  let templebutton = window.location.href.split("#")[1]
+  temples
+  .filter((data) =>
+    {
+      if (templebutton === "Large") {
+        return data.area > 90000
+      } else if (templebutton === "Small") { 
+        return data.area < 10000
+      } else if (templebutton === "Old") {
+        return data.dedicated < 1900
+      } else if (templebutton === "New") {
+        return data.dedicated > 2000
+      } else {
+        return data
+      }
+    })
+  .map((data) =>
+  {
+    templelist += `<div class="temple-card">
+            <h2 class="temple-title">` + data.templeName + `</h2>
+            <div class="temple-location">` + data.location + `</div>
+            <div class="temple-dedicated">` + data.dedicated + `</div>
+            <div class="temple-size">` + data.area + `</div>
+            <img class="temple-image" src="` + data.imageUrl + `" alt="` + data.templeName + `" loading="lazy">
+          </div>`;
+  })
+
+  document.getElementById("temple-grid").innerHTML = templelist;
+};
+
+myFunction();

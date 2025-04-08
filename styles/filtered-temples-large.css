@@ -43,40 +43,32 @@ main{
     flex-direction: row; 
     gap: 5px;   
     justify-content: center;
-    background-color: var(--default-color);
-}
-
-main h1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--default-color);
+    background-color: green;
 }
 
 
-main div{
+main div, main div h2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width:25%;
     justify-content: space-between;
     border: solid .5px hsla(247, 74%, 12%, 0.694);
     background-color: var(--default-color);
 }
 
-table{
-    border: solid rgb(48, 48, 116);
-    border-radius: 1rem;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--card-color);
-    color: var(--background-color);
+.temple-card {
+    width: 25%;
 }
 
-table p, table img, table h1 {
-    background-color: var(--card-color);
-    color: var(--default-color);
+#temple-grid {
+    width: 25vw;
 }
+
+.temple-image {
+    max-width: 25vw;
+}
+
+
 
 footer{
     justify-items: center;
