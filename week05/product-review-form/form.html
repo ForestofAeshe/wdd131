@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Product Review-W05 Assignment</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="styles/form.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <h1>Product Review Form</h1>
+                <h2></h2>
+    </header>
+    
+<!-- CONTENT HERE -->
+<main>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" class="review">
+        <fieldset>
+            <div>
+                <label for="products">Product Name:</label>
+                <select id="products" name="products" >
+                    
+                </select>
+            </div>
+            <div>
+                <label for="rating">Overall Rating</label>
+                <select name="rating" id="rating">
+                    <option value="5star">5 Star</option>
+                    <option value="4star">4 Star</option>
+                    <option value="3star">3 Star</option>
+                    <option value="2star">2 Star</option>
+                    <option value="1star">1 Star</option>
+                </select>
+               </div>
+            <div>
+                <label for="installDate">Date of Installation <input type="date" name="installDate"></label>
+            </div>
+            <div id="features">Which features did you find useful in the product? (Check all that apply)</div>
+                <label>Design <input type="checkbox" name="features" value="yes"></label>
+                <label>Durability <input type="checkbox" name="features" value="yes"></label>
+                <label>Ease of Use <input type="checkbox" name="features" value="yes"></label>
+                <label>Performance <input type="checkbox"></label> 
+            <div>
+                <label for="writtenReview">Written Review (Optional)</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="name">Your Name (Optional)</label>
+                <input type="text">
+            </div>
+            <div>
+                <input type="submit" value="Post Review" id="submit">
+            </div>
+        </fieldset>
+
+    </form>            
+</main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> | Michael Petersen | USA</p>
+    <p> Last Modified: <script>document.write(document.lastModified)</script></p>
+</footer>
+<script src="scripts/form.js"></script>
+</body>
+</html>
