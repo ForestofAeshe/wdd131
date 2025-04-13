@@ -1,0 +1,113 @@
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+  
+:root {
+    --default-color: rgb(133, 202, 255);
+    --accent-color-1: rgb(255, 208, 88);
+    --text-color-1: rgb(6, 3, 36);
+    --accent-color-2: rgb(112, 81, 2);
+}
+
+*{
+    background-color: var(--default-color);
+    color: var(--text-color-1);
+    border: solid .5px var(--accent-color-2);
+    padding: 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background-color: var(--accent-color-2);
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+header div nav {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+h1, h2, p, a, li {
+    background-color: var(--accent-color-1);
+}
+
+footer {
+    justify-items: center;
+}
+
+.charsheet {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.identification {
+    grid-column: 1/3;
+}
+
+
+
+.skills {
+    display: grid;
+    grid-column: 1/3;
+    grid-template-columns: 50% 50%;
+}
+
+.general-skills {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.magic-skills {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.combat-skills {
+    display:grid;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.social-skills {
+    display:grid;
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.knowledge-skills {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.weapon {
+    display:grid;
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
