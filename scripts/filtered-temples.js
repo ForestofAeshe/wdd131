@@ -94,11 +94,11 @@ const temples = [
 // }
 let templelist = "";
 
-document.getElementById("home").addEventListener("click",myFunction);
-document.getElementById("old").addEventListener("click",myFunction);
-document.getElementById("new").addEventListener("click", myFunction);
-document.getElementById("large").addEventListener("click", myFunction);
-document.getElementById("small").addEventListener("click", myFunction);
+document.getElementById("home").addEventListener("click",myFunction());
+document.getElementById("old").addEventListener("click",myFunction());
+document.getElementById("new").addEventListener("click", myFunction());
+document.getElementById("large").addEventListener("click", myFunction());
+document.getElementById("small").addEventListener("click", myFunction());
 
 function myFunction() {
 
